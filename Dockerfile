@@ -44,3 +44,6 @@ RUN wget  https://github.com/mozilla/geckodriver/releases/download/v0.20.0/gecko
 
 # Get the selenium
 RUN wget -O ~/libraries/selenium.jar https://goo.gl/UzaKCo
+
+
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
